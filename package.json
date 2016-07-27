@@ -10,6 +10,9 @@
     "atom-workspace": "atom-cform:toggle"
   },
   "repository": "https://github.com/dgomesbr/atom-cform.git",
+  "bugs": {
+    "url": "https://github.com/dgomesbr/atom-cform/issues"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">=1.5.0 <2.0.0"
