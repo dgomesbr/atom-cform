@@ -1,11 +1,22 @@
 {
   "name": "atom-cform",
   "main": "./lib/atom-cform",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "AWS CloudFormation code completion for Atom editor",
-  "keywords": ["AWS","cloud","cloudformation", "cloud formation","json","code","code complete","code completion", "completion"
+  "keywords": [
+    "AWS",
+    "cloud",
+    "cloudformation",
+    "cloud formation",
+    "json",
+    "code",
+    "code complete",
+    "code completion",
+    "completion"
   ],
-  "fileTypes":["json"],
+  "fileTypes": [
+    "json"
+  ],
   "activationCommands": {
     "atom-workspace": "atom-cform:toggle"
   },
@@ -17,6 +28,5 @@
   "engines": {
     "atom": ">=1.5.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
