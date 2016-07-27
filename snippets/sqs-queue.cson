@@ -1,0 +1,4 @@
+'.source.json':
+  'sqs-queue':
+    'prefix': 'sqs-queue'
+    'body': '"${1:sqsQueue}": {\n   "Type": "AWS::SQS::Queue",\n   "Properties": {\n      "DelaySeconds": "${2}",\n      "MaximumMessageSize": "${3}",\n      "MessageRetentionPeriod": "${4}",\n      "QueueName": "${5}",\n      "ReceiveMessageWaitTimeSeconds": "${6}",\n      "RedrivePolicy": {${7}},\n      "VisibilityTimeout": "${8}"\n   }\n}'

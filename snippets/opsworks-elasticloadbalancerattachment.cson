@@ -1,0 +1,4 @@
+'.source.json':
+  'opsworks-elasticloadbalancerattachment':
+    'prefix': 'opsworks-elasticloadbalancerattachment'
+    'body': '"${1:opsworksElasticLoadBalancerAttachment}": {\n  "Type": "AWS::OpsWorks::ElasticLoadBalancerAttachment",\n  "Properties": {\n    "ElasticLoadBalancerName": "${2}",\n    "LayerId": "${3}"\n  }\n}'

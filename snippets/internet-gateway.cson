@@ -1,0 +1,4 @@
+'.source.json':
+  'internet-gateway':
+    'prefix': 'internet-gateway'
+    'body': '"${1:igwName}": {\n  "Type": "AWS::EC2::InternetGateway",\n  "Properties": {\n    "Tags": [${2:"-"}]\n  }\n},\n"AttachGateway": {\n  "Type": "AWS::EC2::VPCGatewayAttachment",\n  "Properties": {\n    "VpcId": ${3:"--"},\n    "InternetGatewayId": { "Ref": "${4:igwName}" }\n  }\n}'

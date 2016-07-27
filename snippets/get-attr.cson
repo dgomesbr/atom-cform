@@ -1,0 +1,4 @@
+'.source.json':
+  'get-attr':
+    'prefix': 'get-attr'
+    'body': '{ "Fn::GetAtt" : [ "${1:logicalNameOfResource}", "${2:attributeName}" ]}'

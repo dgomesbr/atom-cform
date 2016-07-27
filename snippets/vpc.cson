@@ -1,0 +1,4 @@
+'.source.json':
+  'vpc':
+    'prefix': 'vpc'
+    'body': '"${1:name}": {\n  "Type": "AWS::EC2::VPC",\n  "Properties": {\n    "CidrBlock": ${2:"----/--"},\n    "Tags": [${3:-}]\n  }\n}'

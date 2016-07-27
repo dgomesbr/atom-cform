@@ -1,0 +1,4 @@
+'.source.json':
+  'output':
+    'prefix': 'output'
+    'body': '"${1:name}" : {\n  "Value" : ${2:-}\n}'

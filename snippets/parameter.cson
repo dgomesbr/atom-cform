@@ -1,0 +1,4 @@
+'.source.json':
+  'parameter':
+    'prefix': 'parameter'
+    'body': '"${1:paramName}": {\n    "Description": "${2:-}",\n    "Type": "${3:[String|Number|CommaDelimitedList]}",\n    "Default": "${4:-}"\n}'

@@ -1,0 +1,4 @@
+'.source.json':
+  'cloudfront-distribution':
+    'prefix': 'cloudfront-distribution'
+    'body': '"${1:cloudfrontDistribution}": {\n   "Type": "AWS::CloudFront::Distribution",\n   "Properties": {\n      "DistributionConfig": ${2}\n   }\n}'

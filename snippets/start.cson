@@ -1,0 +1,4 @@
+'.source.json':
+  'start':
+    'prefix': 'start'
+    'body': '{\n    "AWSTemplateFormatVersion": "2010-09-09",\n    "Description": "${1}",\n    "Metadata": {\n\n    },\n    "Parameters": {\n    \n    },\n    "Mappings": {\n\n    },\n    "Conditions": {\n\n    },\n    "Resources": {\n\n    },\n    "Outputs": {\n\n    }\n}'

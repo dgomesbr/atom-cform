@@ -1,0 +1,4 @@
+'.source.json':
+  'security-group-egress-block':
+    'prefix': 'security-group-egress-block'
+    'body': '"SecurityGroupEgress" : [ \n  ${1:--insert rules--}\n]'

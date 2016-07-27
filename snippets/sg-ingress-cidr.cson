@@ -1,0 +1,4 @@
+'.source.json':
+  'sg-ingress-cidr':
+    'prefix': 'security-group-ingress-cidr'
+    'body': '{ "IpProtocol" : "${1:[tcp|udp|ip]}", "FromPort" : "${2:-}", "ToPort" : "${3:-}", "CidrIp" : "${4:-}" }'

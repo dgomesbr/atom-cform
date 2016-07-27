@@ -1,0 +1,4 @@
+'.source.json':
+  'resource':
+    'prefix': 'resource'
+    'body': '"${1:resourceName}": {\n    "Description": "${2:-}",\n    "Type": "${3:-}",\n    "Properties": "${4:-}"\n}'

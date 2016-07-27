@@ -1,0 +1,4 @@
+'.source.json':
+  'opsworks-instance':
+    'prefix': 'opsworks-instance'
+    'body': '"${1:opsworksInstance}": {\n  "Type": "AWS::OpsWorks::Instance",\n  "Properties": {\n    "InstanceType": "${2}",\n    "LayerIds":  [ "${3}" ],\n    "StackId": "${4}",\n    "AmiId": "${5}",\n    "Architecture": "${6}",\n    "AutoScalingType": "${7}",\n    "AvailabilityZone": "${8}",\n    "InstallUpdatesOnBoot": "${9:true | false}",\n    "Os": "${10}",\n    "RootDeviceType": "${11}",\n    "SshKeyName": "${12}",\n    "SubnetId": "${13}",\n    "TimeBasedAutoScaling": { ${14} }\n  }\n}'

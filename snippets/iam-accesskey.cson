@@ -1,0 +1,4 @@
+'.source.json':
+  'iam-accesskey':
+    'prefix': 'iam-accesskey'
+    'body': '"${1:iamAccessKey}": {\n   "Type": "AWS::IAM::AccessKey",\n   "Properties": {\n      "Status": "${2}",\n      "UserName": "${3}",\n      "Serial": "${4}"\n   }\n}'

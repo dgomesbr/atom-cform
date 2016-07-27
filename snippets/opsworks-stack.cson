@@ -1,0 +1,4 @@
+'.source.json':
+  'opsworks-stack':
+    'prefix': 'opsworks-stack'
+    'body': '"${1:opsworksStack}": {\n  "Type": "AWS::OpsWorks::Stack",\n  "Properties": {\n    "DefaultInstanceProfileArn": "${2}",\n    "Name": "${3}",\n    "ServiceRoleArn": "${4}",\n    "Attributes": { "${5}":"${6}" },\n    "ChefConfiguration": { ${7} },\n    "ConfigurationManager": { ${8} },\n    "CustomCookbooksSource": { ${9} },\n    "CustomJson": { ${10} },\n    "DefaultAvailabilityZone": "${11}",\n    "DefaultOs": "${12}",\n    "DefaultRootDeviceType": "${13}",\n    "DefaultSshKeyName": "${14}",\n    "DefaultSubnetId": "${15}",\n    "HostnameTheme": "${16}",\n    "UseCustomCookbooks": "${17:true | false}",\n    "UseOpsworksSecurityGroups": "${18:true | false}",\n    "VpcId": "${19}"\n  }\n}'

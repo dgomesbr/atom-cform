@@ -1,0 +1,18 @@
+{
+  "name": "atom-cform",
+  "main": "./lib/atom-cform",
+  "version": "0.1.0",
+  "description": "AWS CloudFormation code completion",
+  "keywords": ["AWS","cloud","cloudformation", "cloud formation","json","code","code complete","code completion", "completion"
+  ],
+  "activationCommands": {
+    "atom-workspace": "atom-cform:toggle"
+  },
+  "repository": "https://github.com/dgomesbr/atom-cform",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.5.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

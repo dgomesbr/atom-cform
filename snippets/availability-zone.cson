@@ -1,0 +1,4 @@
+'.source.json':
+  'availability-zone':
+    'prefix': 'availability-zone'
+    'body': '{"Fn::Join" : ["",[{"Ref" : "AWS::Region"},"${1:a}" ] ]}'

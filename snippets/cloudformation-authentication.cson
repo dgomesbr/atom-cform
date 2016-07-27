@@ -1,0 +1,4 @@
+'.source.json':
+  'cloudformation-authentication':
+    'prefix': 'cloudformation-authentication'
+    'body': '"AWS::CloudFormation::Authentication": {\n  "${1:AccessCreds}": {\n    "type": "${2}",\n    "buckets": [ "${3}" ],\n    "roleName": "${4}",\n    "accessKeyId": "${5}",\n    "secretKey": "${6}",\n    "uris": [ "${7}" ],\n    "username": "${8}",\n    "password": "${9}"\n  }\n}'

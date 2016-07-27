@@ -1,0 +1,4 @@
+'.source.json':
+  'route53-healthcheck':
+    'prefix': 'route53-healthcheck'
+    'body': '"${1:route53HealthCheck}": {\n  "Type": "AWS::Route53::HealthCheck",\n  "Properties": {\n    "HealthCheckConfig": { ${2} },\n    "HealthCheckTags": [ ${3} ]\n  }\n}'

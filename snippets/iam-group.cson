@@ -1,0 +1,4 @@
+'.source.json':
+  'iam-group':
+    'prefix': 'iam-group'
+    'body': '"${1:iamGroup}": {\n   "Type": "AWS::IAM::Group",\n   "Properties": {\n      "Path": "${2}",\n      "Policies": [ "${3}" ]\n   }\n}'

@@ -1,0 +1,4 @@
+'.source.json':
+  'elasticbeanstalk-applicationversion':
+    'prefix': 'elasticbeanstalk-applicationversion'
+    'body': '"${1:elasticbeanstalkApplicationVersion}": {\n  "Type": "AWS::ElasticBeanstalk::ApplicationVersion",\n  "Properties": {\n    "ApplicationName": "${2}",\n    "Description": "${3}",\n    "SourceBundle": { ${4} }\n  }\n}'

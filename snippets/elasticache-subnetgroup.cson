@@ -1,0 +1,4 @@
+'.source.json':
+  'elasticache-subnetgroup':
+    'prefix': 'elasticache-subnetgroup'
+    'body': '"${1:elasticacheSubnetGroup}": {\n    "Type": "AWS::ElastiCache::SubnetGroup",\n    "Properties": {\n        "Description": "${2}",\n        "SubnetIds": [ "${3}" ]\n    }\n}'

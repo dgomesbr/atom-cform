@@ -1,0 +1,4 @@
+'.source.json':
+  'parameter-type-vpc-id':
+    'prefix': 'parameter-type-vpc-id'
+    'body': 'AWS::EC2::VPC::Id'

@@ -1,0 +1,4 @@
+'.source.json':
+  'sns-topicpolicy':
+    'prefix': 'sns-topicpolicy'
+    'body': '"${1:snsTopicPolicy}": {\n  "Type": "AWS::SNS::TopicPolicy",\n  "Properties":\n    {\n      "PolicyDocument": {${2}},\n      "Topics": [ {${3}} ]\n    }\n}'

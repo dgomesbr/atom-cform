@@ -1,0 +1,4 @@
+'.source.json':
+  'sqs-queuepolicy':
+    'prefix': 'sqs-queuepolicy'
+    'body': '"${1:sqsQueuePolicy}": {\n   "Type": "AWS::SQS::QueuePolicy",\n   "Properties": {\n      "PolicyDocument": {${2}},\n      "Queues": [ ${3} ]\n   }\n}'

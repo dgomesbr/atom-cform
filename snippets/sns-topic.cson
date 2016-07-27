@@ -1,0 +1,4 @@
+'.source.json':
+  'sns-topic':
+    'prefix': 'sns-topic'
+    'body': '"${1:snsTopic}": {\n  "Type": "AWS::SNS::Topic",\n  "Properties": {\n    "DisplayName": "${2}",\n    "Subscription": [ ${3} ],\n    "TopicName": "${4}"\n  }\n}'

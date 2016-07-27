@@ -1,0 +1,4 @@
+'.source.json':
+  'redshift-clusterparametergroup':
+    'prefix': 'redshift-clusterparametergroup'
+    'body': '"${1:redshiftClusterParameterGroup}": {\n  "Type": "AWS::Redshift::ClusterParameterGroup",\n  "Properties": {\n    "Description": "${2}",\n    "ParameterGroupFamily": "${3}",\n    "Parameters": [ ${4} ]\n  }\n}'

@@ -1,0 +1,4 @@
+'.source.json':
+  'ec2-volume':
+    'prefix': 'ec2-volume'
+    'body': '"${1:ec2Volume}": {\n   "Type": "AWS::EC2::Volume",\n   "Properties": {\n      "AutoEnableIO": "${2:true|false}",\n      "AvailabilityZone": "${3:-}",\n      "Encrypted": "${4:true|false}",\n      "KmsKeyId": "${5:-}",\n      "Size": "${6:-}",\n      "SnapshotId": "${7:snap-}",\n      "Tags": [\n            {\n                "Key": "${8:-}",\n                "Value": "${9:-}"\n            }\n        ],\n      "VolumeType" : "${10:standard|io1|gp2}"\n   }\n}'

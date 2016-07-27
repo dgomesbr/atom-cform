@@ -1,0 +1,4 @@
+'.source.json':
+  'opsworks-layer':
+    'prefix': 'opsworks-layer'
+    'body': '"${1:opsworksLayer}": {\n  "Type": "AWS::OpsWorks::Layer",\n  "Properties": {\n  \t"AutoAssignElasticIps": "${2:true | false}",\n    "AutoAssignPublicIps": "${3:true | false}",\n    "EnableAutoHealing": "${4:true | false}",\n    "Name": "${5}",\n    "Shortname": "${6}",\n    "StackId": "${7}",\n    "Type": "${8}",\n    "Attributes": { "${9}":"${10}" },\n    "CustomInstanceProfileArn": "${11}",\n    "CustomRecipes": ${12},\n    "CustomSecurityGroupIds":  [ "${13}" ],\n    "InstallUpdatesOnBoot": "${14:true | false}",\n    "LoadBasedAutoScaling": { ${15} },\n    "Packages": [ "${16}" ],\n    "VolumeConfigurations": [ ${17} ]\n  }\n}'

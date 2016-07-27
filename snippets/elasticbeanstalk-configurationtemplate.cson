@@ -1,0 +1,4 @@
+'.source.json':
+  'elasticbeanstalk-configurationtemplate':
+    'prefix': 'elasticbeanstalk-configurationtemplate'
+    'body': '"${1:elasticbeanstalkConfigurationTemplate}": {\n  "Type": "AWS::ElasticBeanstalk::ConfigurationTemplate",\n  "Properties": {  \n    "ApplicationName": "${2}",\n    "Description": "${3}",\n    "EnvironmentId": "${4}",\n    "OptionSettings": [ ${5} ],\n    "SolutionStackName": "${6}",\n    "SourceConfiguration": ${7}\n  } \n}'

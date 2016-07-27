@@ -1,0 +1,4 @@
+'.source.json':
+  'cloudformation-waitcondition':
+    'prefix': 'cloudformation-waitcondition'
+    'body': '"${1:waitCondition}": {\n   "Type": "AWS::CloudFormation::WaitCondition",\n   "Properties": {\n      "Count": "${2}",\n      "Handle": "${3}",\n      "Timeout": "${4}"\n   }\n}'

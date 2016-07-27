@@ -1,0 +1,4 @@
+'.source.json':
+  's3-bucket':
+    'prefix': 's3-bucket'
+    'body': '"${1:s3Bucket}": {\n\t"Type": "AWS::S3::Bucket",\n\t"Properties": {\n\t\t"AccessControl": "${2:Private | PublicRead | PublicReadWrite | AuthenticatedRead | LogDeliveryWrite | BucketOwnerRead | BucketOwnerFullControl}",\n\t\t"BucketName": "${3}",\n\t\t"CorsConfiguration": {${4}},\n\t\t"LifecycleConfiguration": {${5}},\n\t\t"NotificationConfiguration": {${6}},\n\t\t"VersioningConfiguration": {${7}},\n\t\t"WebsiteConfiguration": {${8}},\n\t\t"Tags": [${9}] \n\t}\n}'

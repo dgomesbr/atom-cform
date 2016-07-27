@@ -1,0 +1,4 @@
+'.source.json':
+  'elastic-load-balancer':
+    'prefix': 'elastic-load-balancer'
+    'body': '"${1:-}": {\n   "Type": "AWS::ElasticLoadBalancing::LoadBalancer",\n   "Properties": {\n      "AvailabilityZones" : [ "${2:-}" ],\n      "Listeners" : [ ${3:-} ],\n      "Tags": [\n            {\n              "Key": "${4:-}",\n              "Value": "${5:-}"\n            }\n      ]\n   }\n}'

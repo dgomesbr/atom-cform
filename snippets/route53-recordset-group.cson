@@ -1,0 +1,4 @@
+'.source.json':
+  'route53-recordset-group':
+    'prefix': 'route53-recordsetgroup'
+    'body': '"${1:route53RSGroup}": {\n\t"Type": "AWS::Route53::RecordSetGroup",\n\t"Properties": {\n\t\t"HostedZoneId": "${2}",\n\t\t"HostedZoneName": "${3}",\n\t\t"RecordSets": [ {${4}} ],\n\t\t"Comment": "${5}"\n   }\n}'

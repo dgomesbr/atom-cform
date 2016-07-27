@@ -1,0 +1,4 @@
+'.source.json':
+  'find-in-map':
+    'prefix': 'find-in-map'
+    'body': '"Fn::FindInMap": [\n    "${1:map}",\n    "${2:selector}",\n    "${3:value}"\n]'

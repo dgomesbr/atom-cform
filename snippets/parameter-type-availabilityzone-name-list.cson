@@ -1,0 +1,4 @@
+'.source.json':
+  'parameter-type-availabilityzone-name-list':
+    'prefix': 'parameter-type-availabilityzone-name-list'
+    'body': 'List<AWS::EC2::AvailabilityZone::Name>'

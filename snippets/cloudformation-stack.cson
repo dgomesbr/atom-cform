@@ -1,0 +1,4 @@
+'.source.json':
+  'cloudformation-stack':
+    'prefix': 'cloudformation-stack'
+    'body': '"${1:cloudFormationStack}": {\n "Type": "AWS::CloudFormation::Stack",\n "Properties": {\n    "NotificationARNs": [ "${2}" ],\n    "Parameters": { ${3} },\n    "TemplateURL": "${4}",\n    "TimeoutInMinutes": "${5}"\n }\n}'

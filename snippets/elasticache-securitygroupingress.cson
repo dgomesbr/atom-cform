@@ -1,0 +1,4 @@
+'.source.json':
+  'elasticache-securitygroupingress':
+    'prefix': 'elasticache-securitygroupingress'
+    'body': '"${1:elasticacheSecurityGroupIngress}": {\n  "Type": "AWS::ElastiCache::SecurityGroupIngress",\n  "Properties":\n  {\n    "CacheSecurityGroupName": "${2}",\n    "EC2SecurityGroupName": "${3}",\n    "EC2SecurityGroupOwnerId": "${4}"\n  }\n}'

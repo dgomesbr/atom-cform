@@ -1,0 +1,4 @@
+'.source.json':
+  'elasticache-cachecluster':
+    'prefix': 'elasticache-cachecluster'
+    'body': '"${1:elasticacheCacheCluster}": {\n   "Type": "AWS::ElastiCache::CacheCluster",\n   "Properties":\n   {\n      "AutoMinorVersionUpgrade": "${2:true | false}",\n      "AZMode": "${3}",\n      "CacheNodeType": "${4}",\n      "CacheParameterGroupName": "${5}",\n      "CacheSecurityGroupNames": [ "${6}" ],\n      "CacheSubnetGroupName": "${7}",\n      "ClusterName": "${8}",\n      "Engine": "${9}",\n      "EngineVersion": "${10}",\n      "NotificationTopicArn": "${11}",\n      "NumCacheNodes": "${12}",\n      "Port": "${13}",\n      "PreferredAvailabilityZone": "${14}",\n      "PreferredAvailabilityZones": [ "${15}" ],\n      "PreferredMaintenanceWindow": "${16}",\n      "SnapshotArns": ["${17}" ],\n      "SnapshotRetentionLimit": "${18}",\n      "SnapshotWindow": "${19}",\n      "VpcSecurityGroupIds": [ "${20}" ]\n   }\n}'

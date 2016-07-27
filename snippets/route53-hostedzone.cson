@@ -1,0 +1,4 @@
+'.source.json':
+  'route53-hostedzone':
+    'prefix': 'route53-hostedzone'
+    'body': '"${1}": {\n\t"Type": "AWS::Route53::HostedZone",\n\t"Properties": {\n\t\t"Name": "{$2}",\n\t\t"VPCs": "{$3}",\n\t\t"HostedZoneConfig": {{$4}},\n\t\t"HostedZoneTags": [{$5}]\n\t}\n}'

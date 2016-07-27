@@ -1,0 +1,4 @@
+'.source.json':
+  'parameter-type-route53-hostedzone-id-list':
+    'prefix': 'parameter-type-route53-hostedzone-id-list'
+    'body': 'List<AWS::Route53::HostedZone::Id>'

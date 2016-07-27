@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Activate AWS Cloud Formation code completion",
+        "command": "atom-cform:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "AWS Cloud Formation",
+          "submenu": [
+            {
+              "label": "Auto-complete",
+              "command": "atom-cform:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

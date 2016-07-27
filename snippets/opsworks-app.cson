@@ -1,0 +1,4 @@
+'.source.json':
+  'opsworks-app':
+    'prefix': 'opsworks-app'
+    'body': '"${1:opsworksApp}": {\n  "Type": "AWS::OpsWorks::App",\n  "Properties": {\n  \t"Name": "${2}",\n    "StackId": "${3}",\n    "Type": "${4}",\n    "AppSource": { ${5} },\n    "Attributes": { ${6}:${7} },\n    "Description": "${8}",\n    "Domains":  [ "${9}" ],\n    "EnableSsl": "${10:true | false}",\n    "Shortname": "${11}",\n    "SslConfiguration": { ${12} }\n  }\n}'

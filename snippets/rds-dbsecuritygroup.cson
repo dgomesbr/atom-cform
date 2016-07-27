@@ -1,0 +1,4 @@
+'.source.json':
+  'rds-dbsecuritygroup':
+    'prefix': 'rds-dbsecuritygroup'
+    'body': '"${1:rdsDBSecurityGroup}": {\n   "Type": "AWS::RDS::DBSecurityGroup",\n   "Properties": {\n      "EC2VpcId": { ${2} },\n      "DBSecurityGroupIngress": [ ${3} ],\n      "GroupDescription": "${4}",\n      "Tags": [ ${5} ]\n   }\n}'

@@ -1,0 +1,4 @@
+'.source.json':
+  'join':
+    'prefix': 'join'
+    'body': '{"Fn::Join" : ["",[ ${1:"prefix"}, ${2:"suffix"} ] ]}'

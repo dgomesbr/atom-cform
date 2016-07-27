@@ -1,0 +1,4 @@
+'.source.json':
+  'ec2-instance':
+    'prefix': 'ec2-instance'
+    'body': '"${1:-}": {\n    "Type": "AWS::EC2::Instance",\n    "Properties": {\n        "KeyName": ${2:-},\n        "DisableApiTermination": "${3:-}",\n        "ImageId": { ${4:-} },\n        "InstanceType": "${5:-}",\n        "Monitoring": "${6:true|false}",\n        "SecurityGroupIds" : [${7:-}],\n        "Tags": [\n            {\n                "Key": "${8:-}",\n                "Value": "${9:-}"\n            }\n        ],\n        "UserData": {\n            "Fn::Base64": {\n                "Fn::Join": [\n                    "",\n                    [\n                        "#!/bin/bash -ex",\n                        "${10:-}"\n                    ]\n                ]\n            }\n        }\n}\n        }'

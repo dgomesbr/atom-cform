@@ -1,0 +1,4 @@
+'.source.json':
+  'autoscaling-group':
+    'prefix': 'autoscaling-group'
+    'body': '"${1:-}" : {\n    "Type" : "AWS::AutoScaling::AutoScalingGroup",\n    "Properties" : {\n        "AvailabilityZones" : [${2:"--"}],\n        "LaunchConfigurationName" : ${3:"--"},\n        "MaxSize" : "${4:--}",\n        "MinSize" : "${5:--}",\n        "Tags" : [ {"Key" : "Name",\n                    "Value" : "${6:"--"}",\n                    "PropagateAtLaunch" : "True"} \n                ]\n    }\n}'

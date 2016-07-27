@@ -1,0 +1,4 @@
+'.source.json':
+  'select-list':
+    'prefix': 'select-list'
+    'body': '{ "Fn::Select" : [ ${1:0|1|etc}, {"Ref": "${2:list_name}"} ] }'

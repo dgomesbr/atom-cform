@@ -1,0 +1,4 @@
+'.source.json':
+  'iam-user':
+    'prefix': 'iam-user'
+    'body': '"${1:iamUser}": {\n   "Type": "AWS::IAM::User",\n   "Properties": {\n      "Path": "${2:/}",\n      "Groups": [ "${3}" ],\n      "LoginProfile": { "Password" : "${4}" },\n      "Policies": [ ${5} ]\n   }\n}'

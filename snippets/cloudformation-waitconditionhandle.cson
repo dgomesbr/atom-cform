@@ -1,0 +1,4 @@
+'.source.json':
+  'cloudformation-waitconditionhandle':
+    'prefix': 'cloudformation-waitconditionhandle'
+    'body': '"${1:waitConditionHandle}": {\n  "Type" : "AWS::CloudFormation::WaitConditionHandle",\n  "Properties" : {\n  }\n}'

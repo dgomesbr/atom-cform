@@ -1,0 +1,4 @@
+'.source.json':
+  'tag':
+    'prefix': 'tag'
+    'body': '{ "Key": "${1:-}", "Value":  ${2:"--"} }'

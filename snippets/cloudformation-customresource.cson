@@ -1,0 +1,4 @@
+'.source.json':
+  'cloudformation-customresource':
+    'prefix': 'cloudformation-customresource'
+    'body': '"${1:customResource}": {\n   "Type": "AWS::CloudFormation::CustomResource",\n   "Version": "1.0",\n   "Properties": {\n      "ServiceToken": "${2}"\n   }\n}'

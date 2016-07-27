@@ -1,0 +1,4 @@
+'.source.json':
+  'eip-vpc':
+    'prefix': 'eip-vpc'
+    'body': '"${1:eipName}": {\n  "Type": "AWS::EC2::EIP",\n  "Properties": {\n    "Domain": "vpc",\n    "InstanceId": ${2:"--"}\n  }\n}'

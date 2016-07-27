@@ -1,0 +1,4 @@
+'.source.json':
+  'rds-dbparametergroup':
+    'prefix': 'rds-dbparametergroup'
+    'body': '"${1:rdsDBParameterGroup}": {\n   "Type": "AWS::RDS::DBParameterGroup",\n   "Properties": {\n      "Description": "${2}",\n      "Family": "${3}",\n      "Parameters": {${4}},\n      "Tags": [ ${5} ]\n   }\n}'

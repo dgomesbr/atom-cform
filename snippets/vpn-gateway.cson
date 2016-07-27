@@ -1,0 +1,4 @@
+'.source.json':
+  'vpn-gateway':
+    'prefix': 'vpn-gateway'
+    'body': '"${1:vgwName}": {\n  "Type": "AWS::EC2::VPNGateway",\n  "Properties": {\n    "Type": "ipsec.1",\n    "Tags": [${2:"--"}]\n  }\n},\n"AttachVpnGateway": {\n  "Type": "AWS::EC2::VPCGatewayAttachment",\n  "Properties": {\n    "VpcId": ${3:"--"},\n    "VpnGatewayId": { "Ref": "${4:vgwName}" }\n  }\n}'

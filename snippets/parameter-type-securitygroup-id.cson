@@ -1,0 +1,4 @@
+'.source.json':
+  'parameter-type-securitygroup-id':
+    'prefix': 'parameter-type-securitygroup-id'
+    'body': 'AWS::EC2::SecurityGroup::Id'

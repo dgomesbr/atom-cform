@@ -1,0 +1,4 @@
+'.source.json':
+  'iam-instanceprofile':
+    'prefix': 'iam-instanceprofile'
+    'body': '"${1:iamInstanceProfile}": {\n   "Type": "AWS::IAM::InstanceProfile",\n   "Properties": {\n      "Path": "${2:/}",\n      "Roles": [ "${3}" ]\n   }\n}'

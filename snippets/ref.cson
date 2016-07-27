@@ -1,0 +1,4 @@
+'.source.json':
+  'ref':
+    'prefix': 'ref'
+    'body': '{ "Ref": "${1:logicalName}" }'

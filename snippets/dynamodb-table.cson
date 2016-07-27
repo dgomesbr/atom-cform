@@ -1,0 +1,4 @@
+'.source.json':
+  'dynamodb-table':
+    'prefix': 'dynamodb-table'
+    'body': '"${1:dynamodbTable}": {\n   "Type": "AWS::DynamoDB::Table",\n   "Properties": {\n      "AttributeDefinitions": [ ${2} ],\n      "GlobalSecondaryIndexes": [ ${3} ],\n      "KeySchema": [ ${4} ],\n      "LocalSecondaryIndexes": [ ${5} ],\n      "ProvisionedThroughput": { ${6} },\n      "TableName": "${7}"\n   }\n}'

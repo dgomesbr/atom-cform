@@ -1,0 +1,4 @@
+'.source.json':
+  'parameter-type-ec2-security-group-name':
+    'prefix': 'parameter-type-ec2-security-group-name'
+    'body': 'AWS::EC2::SecurityGroup::GroupName'

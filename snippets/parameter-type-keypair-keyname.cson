@@ -1,0 +1,4 @@
+'.source.json':
+  'parameter-type-keypair-keyname':
+    'prefix': 'parameter-type-keypair-keyname'
+    'body': 'AWS::EC2::KeyPair::KeyName'

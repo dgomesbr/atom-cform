@@ -1,0 +1,4 @@
+'.source.json':
+  'elasticbeanstalk-application':
+    'prefix': 'elasticbeanstalk-application'
+    'body': '"${1:elasticbeanstalkApplication}": {\n   "Type": "AWS::ElasticBeanstalk::Application",\n   "Properties": {\n      "ApplicationName": "${2}",\n      "Description": "${3}"\n   }\n}'

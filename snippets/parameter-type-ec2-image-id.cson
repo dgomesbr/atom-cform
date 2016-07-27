@@ -1,0 +1,4 @@
+'.source.json':
+  'parameter-type-ec2-image-id':
+    'prefix': 'parameter-type-ec2-image-id'
+    'body': 'AWS::EC2::Image::Id'

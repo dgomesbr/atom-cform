@@ -1,0 +1,4 @@
+'.source.json':
+  'redshift-clustersecuritygroupingress':
+    'prefix': 'redshift-clustersecuritygroupingress'
+    'body': '"${1:redshiftClusterSecurityGroupIngress}": {\n  "Type": "AWS::Redshift::ClusterSecurityGroupIngress",\n  "Properties": {\n    "ClusterSecurityGroupName": "${2}",\n    "CIDRIP": "${3}",\n    "EC2SecurityGroupName": "${4}",\n    "EC2SecurityGroupOwnerId": "${5}"\n  }\n}'

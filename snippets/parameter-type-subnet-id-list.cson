@@ -1,0 +1,4 @@
+'.source.json':
+  'parameter-type-subnet-id-list':
+    'prefix': 'parameter-type-subnet-id-list'
+    'body': 'List<AWS::EC2::Subnet::Id>'

@@ -1,0 +1,4 @@
+'.source.json':
+  'elasticache-parametergroup':
+    'prefix': 'elasticache-parametergroup'
+    'body': '"${1:elastiicacheParameterGroup}": {\n   "Type": "AWS::ElastiCache::ParameterGroup",\n   "Properties": {\n      "CacheParameterGroupFamily": "${2}",\n      "Description": "${3}",\n      "Properties": { "${4}": "${5}" }\n   }\n}'

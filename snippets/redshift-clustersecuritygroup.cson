@@ -1,0 +1,4 @@
+'.source.json':
+  'redshift-clustersecuritygroup':
+    'prefix': 'redshift-clustersecuritygroup'
+    'body': '"${1:redshiftClusterSecurityGroup}": {\n  "Type": "AWS::Redshift::ClusterSecurityGroup",\n  "Properties": {\n    "Description": "${2}"\n  }\n}'

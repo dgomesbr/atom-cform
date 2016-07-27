@@ -1,0 +1,4 @@
+'.source.json':
+  'logs-loggroup':
+    'prefix': 'logs-loggroup'
+    'body': '"${1:logLogGroup}": {\n  "Type": "AWS::Logs::LogGroup",\n  "Properties": {\n    "RetentionInDays": "${2}"\n  }\n}'

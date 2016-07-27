@@ -1,0 +1,4 @@
+'.source.json':
+  'elasticbeanstalk-environment':
+    'prefix': 'elasticbeanstalk-environment'
+    'body': '"${1:elasticbeanstalkEnvironment}": {\n   "Type": "AWS::ElasticBeanstalk::Environment",\n   "Properties": {\n      "ApplicationName": "${2}",\n      "CNAMEPrefix": "${3}",\n      "Description":  "${4}",\n      "EnvironmentName":  "${5}",\n      "OptionSettings": [ ${6} ],\n      "SolutionStackName": "${7}",\n      "TemplateName": "${8}",\n      "Tier": "${9}",\n      "VersionLabel": "${10}"\n   }\n}'

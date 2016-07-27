@@ -1,0 +1,4 @@
+'.source.json':
+  's3-bucketpolicy':
+    'prefix': 's3-bucketpolicy'
+    'body': '"${1:s3BucketPolicy}": {\n\t"Type": "AWS::S3::BucketPolicy",\n\t"Properties": {\n\t\t"Bucket" : "${2}",\n\t\t"PolicyDocument" : {${3}}\n\t}\n}'

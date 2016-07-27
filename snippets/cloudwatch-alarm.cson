@@ -1,0 +1,4 @@
+'.source.json':
+  'cloudwatch-alarm':
+    'prefix': 'cloudwatch-alarm'
+    'body': '"${1:cloudWatchAlarm}": {\n   "Type": "AWS::CloudWatch::Alarm",\n   "Properties": {\n      "MetricName": "${2}",\n      "Namespace": "${3}",\n      "ComparisonOperator": "${4}",\n      "EvaluationPeriods": "${5}",\n      "Period": "${6}",\n      "Statistic": "${7}",\n      "Threshold": "${8}",\n      "ActionsEnabled": "${9:true | false}",\n      "AlarmActions": [ "${10}" ],\n      "AlarmDescription": "${11}",\n      "AlarmName": "${12}",\n      "Dimensions": [ "${13}" ],\n      "InsufficientDataActions": [ "${14}" ],\n      "OKActions": [ "${15}" ],\n      "Unit": "${16}"\n   }\n}'

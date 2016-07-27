@@ -1,0 +1,4 @@
+'.source.json':
+  'iam-role':
+    'prefix': 'iam-role'
+    'body': '"${1:iamRole}": {\n   "Type": "AWS::IAM::Role",\n   "Properties": {\n      "AssumeRolePolicyDocument": { ${2} },\n      "Path": "${3}",\n      "Policies": [ ${4} ]\n   }\n}'

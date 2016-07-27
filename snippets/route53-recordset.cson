@@ -1,0 +1,4 @@
+'.source.json':
+  'route53-recordset':
+    'prefix': 'route53-recordset'
+    'body': '"${1:route53RS}": {\n\t"Type": "AWS::Route53::RecordSet",\n\t"Properties": {\n\t\t"Name": "${2}",\n\t\t"Type": "${3:A | AAAA | CNAME | MX | NS | PTR | SOA | SPF | SRV | TXT}",\n\t\t"AliasTarget": {${4}},\n\t\t"Comment": "${5}",\n\t\t"Failover": "${6}",\n\t\t"GeoLocation": {${7}},\n\t\t"HealthCheckId": "${8}",\n\t\t"HostedZoneId": "${9}",\n\t\t"HostedZoneName": "${10}",\n\t\t"Region": "${11}",\n\t\t"ResourceRecords": [ "${12}" ],\n\t\t"SetIdentifier": "${13}",\n\t\t"TTL": "${14}",\n\t\t"Weight": "${15}"\n\t}\n}'

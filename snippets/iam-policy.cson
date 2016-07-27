@@ -1,0 +1,4 @@
+'.source.json':
+  'iam-policy':
+    'prefix': 'iam-policy'
+    'body': '"${1:iamPolicy}": {\n   "Type": "AWS::IAM::Policy",\n   "Properties": {\n      "Groups" : [ "${2}" ],\n      "PolicyDocument" : {${3}},\n      "PolicyName" : "${4}",\n      "Roles" : [ "${5}" ],\n      "Users" : [ "${6}" ]\n   }\n}'

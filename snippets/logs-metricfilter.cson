@@ -1,0 +1,4 @@
+'.source.json':
+  'logs-metricfilter':
+    'prefix': 'logs-metricfilter'
+    'body': '"${1:logsMetricFilter}": {\n  "Type": "AWS::Logs::MetricFilter",    \n  "Properties": {\n    "FilterPattern": [ "${2}" ],\n    "LogGroupName": "${3}",\n    "MetricTransformations": [ ${4} ]\n  }\n}'

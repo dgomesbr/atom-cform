@@ -1,0 +1,4 @@
+'.source.json':
+  'cloudtrail':
+    'prefix': 'cloudtrail'
+    'body': '"${1:cloudTrail}": {\n  "Type": "AWS::CloudTrail::Trail",\n  "Properties": {\n    "S3BucketName": "${2}",\n    "IncludeGlobalServiceEvents": "${3:true | false}",\n    "IsLogging": "${4:true | false}",\n    "S3KeyPrefix": "${5}",\n    "SnsTopicName": "${6}"\n  }\n}'

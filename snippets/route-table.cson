@@ -1,0 +1,4 @@
+'.source.json':
+  'route-table':
+    'prefix': 'route-table'
+    'body': '"${1:routeTableName}": {\n  "Type": "AWS::EC2::RouteTable",\n  "Properties": {\n    "VpcId": ${2:"--"},\n    "Tags": [${3:"--"}]\n  }\n}'

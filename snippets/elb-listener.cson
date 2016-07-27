@@ -1,0 +1,4 @@
+'.source.json':
+  'elb-listener':
+    'prefix': 'elb-listener'
+    'body': '{\n   "InstancePort" : "${1:-}",\n   "InstanceProtocol" : "${2:HTTP|HTTPS|TCP|SSL}",\n   "LoadBalancerPort" : "${3:-}",\n   "Protocol" : "${4:HTTP|HTTPS|TCP|SSL}"\n}'

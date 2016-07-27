@@ -1,0 +1,4 @@
+'.source.json':
+  'rds-dbsecuritygroupingress':
+    'prefix': 'rds-dbsecuritygroupingress'
+    'body': '{\n   "CIDRIP": "${1}",\n   "DBSecurityGroupName": "${2}",\n   "EC2SecurityGroupId": "${3}",\n   "EC2SecurityGroupName": "${4}",\n   "EC2SecurityGroupOwnerId": "${5}"\n}'

@@ -1,0 +1,4 @@
+'.source.json':
+  'redshift-clustersubnetgroup':
+    'prefix': 'redshift-clustersubnetgroup'
+    'body': '"${1:redshiftClusterSubnetGroup}": {\n  "Type": "AWS::Redshift::ClusterSubnetGroup",\n  "Properties": {\n    "Description": "${2}",\n    "SubnetIds": [ "${3}" ]\n  }\n}'

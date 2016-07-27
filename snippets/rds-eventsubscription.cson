@@ -1,0 +1,4 @@
+'.source.json':
+  'rds-eventsubscription':
+    'prefix': 'rds-eventsubscription'
+    'body': '"${1:rdsEventSubscription}": {\n  "Type": "AWS::RDS::EventSubscription",\n  "Properties": {\n    "Enabled": "${2:true | false}",\n    "EventCategories": [ "${3}" ],\n    "SnsTopicArn": "${4}",\n    "SourceIds": [ "${5}" ],\n    "SourceType ": "${6}"\n  }\n}'

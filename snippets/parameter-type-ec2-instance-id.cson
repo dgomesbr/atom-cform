@@ -1,0 +1,4 @@
+'.source.json':
+  'parameter-type-ec2-instance-id':
+    'prefix': 'parameter-type-ec2-instance-id'
+    'body': 'AWS::EC2::Instance::Id'

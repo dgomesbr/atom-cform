@@ -1,0 +1,4 @@
+'.source.json':
+  'map':
+    'prefix': 'map'
+    'body': '"${1:mapName}": {\n          "${2:selector}": {\n            "${3:key}": "${4:val}"\n          },\n          "${5:selector}": {\n            "${6:key}": "${7:val}"\n          }\n}'

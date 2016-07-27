@@ -1,0 +1,4 @@
+'.source.json':
+  'security-group':
+    'prefix': 'security-group'
+    'body': '"${1:secGroupName}" : {\n  "Type" : "AWS::EC2::SecurityGroup",\n  "Properties" : {\n    "GroupDescription" : "${2:-}",\n    "SecurityGroupIngress" : [ \n      ${3:--insert rules--}\n    ],\n    "VpcId" : ${4:ref-to-vpc},\n    "Tags" :  [ ${5:insert tag} ]\n  }\n}'

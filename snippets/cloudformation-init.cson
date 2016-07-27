@@ -1,0 +1,4 @@
+'.source.json':
+  'cloudformation-init':
+    'prefix': 'cloudformation-init'
+    'body': '"AWS::CloudFormation::Init": {\n  "config": {\n    "packages": {\n    },\n    "groups": {\n    },\n    "users": {\n    },\n    "sources": {\n    },\n    "files": {\n    },\n    "commands": {\n    },\n    "services": {\n    }\n  }\n}'

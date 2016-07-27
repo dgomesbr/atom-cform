@@ -1,0 +1,4 @@
+'.source.json':
+  'rds-dbsubnetgroup':
+    'prefix': 'rds-dbsubnetgroup'
+    'body': '"${1:rdsDBSubnetGroup}": {\n   "Type": "AWS::RDS::DBSubnetGroup",\n   "Properties": {\n      "DBSubnetGroupDescription": "${2}",\n      "SubnetIds": [ "${3}" ],\n      "Tags": [ ${4} ]\n   }\n}'

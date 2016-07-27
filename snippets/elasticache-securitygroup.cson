@@ -1,0 +1,4 @@
+'.source.json':
+  'elasticache-securitygroup':
+    'prefix': 'elasticache-securitygroup'
+    'body': '"${1:elasticacheSecurityGroup}": {\n  "Type": "AWS::ElastiCache::SecurityGroup",\n  "Properties":\n  {\n    "Description": "${2}"\n  }\n}'

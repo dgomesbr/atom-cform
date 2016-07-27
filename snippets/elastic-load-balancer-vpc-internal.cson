@@ -1,0 +1,4 @@
+'.source.json':
+  'elastic-load-balancer-vpc-internal':
+    'prefix': 'elastic-load-balancer-vpc-internal'
+    'body': '"${1:-}": {\n   "Type": "AWS::ElasticLoadBalancing::LoadBalancer",\n   "Properties": {\n      "Listeners" : [ ${2:-} ],\n      "Scheme" : "internal",\n      "SecurityGroups" : [ ${3:-} ],\n      "Subnets" : [ ${4:-} ],\n      "Tags": [\n            {\n              "Key": "${5:-}",\n              "Value": "${6:-}"\n            }\n      ]\n   }\n}'
