@@ -1,7 +1,7 @@
 {
   "name": "atom-cform",
   "main": "./lib/atom-cform",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "AWS CloudFormation code completion for Atom editor",
   "keywords": [
     "AWS",
