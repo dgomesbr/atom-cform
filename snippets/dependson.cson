@@ -1,0 +1,4 @@
+'.source.json':
+  'dependson':
+    'prefix': 'dependson'
+    'body': '"DependsOn": "${1:-}"'
