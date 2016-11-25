@@ -1,4 +1,4 @@
 '.source.json':
   'route':
     'prefix': 'route'
-    'body': '"${1:routeName}": {\n  "Type": "AWS::EC2::Route",\n  "Properties": {\n    "RouteTableId": ${2:"--"},\n    "DestinationCidrBlock": "${3:"--"},\n    "GatewayId": ${4:"--"}\n  }\n}'
+    'body': '"${1:routeName}": {\n  "Type": "AWS::EC2::Route",\n  "Properties": {\n    "RouteTableId": ${2:"--"},\n    "DestinationCidrBlock": ${3:"--"},\n    "GatewayId": ${4:"--"}\n  }\n}'

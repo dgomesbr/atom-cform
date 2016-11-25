@@ -1,4 +1,4 @@
 '.source.json':
   'route-table-assoc':
     'prefix': 'route-table-assoc'
-    'body': '"${1:routeTableAssocName"}: {\n  "Type": "AWS::EC2::SubnetRouteTableAssociation",\n  "Properties": {\n    "SubnetId": ${2:"--"},\n    "RouteTableId": ${3:"--"}\n  }\n}'
+    'body': '"${1:routeTableAssocName}": {\n  "Type": "AWS::EC2::SubnetRouteTableAssociation",\n  "Properties": {\n    "SubnetId": ${2:"--"},\n    "RouteTableId": ${3:"--"}\n  }\n}'

@@ -1,0 +1,4 @@
+'.source.json':
+  'getazs':
+    'prefix': 'getazs'
+    'body': '{ "Fn::GetAZs" : "${1:regionName}" }'
