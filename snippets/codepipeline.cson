@@ -1,0 +1,4 @@
+'.source.json':
+  'codepipeline':
+    'prefix': 'codepipeline'
+    'body': '"${1:codePipeline}": {\n  "Type": "AWS::CodePipeline::Pipeline",\n  "Properties" : {\n    "ArtifactStore" : "${2}",\n    "RoleArn" : "$3",\n    "Stages" : [ "${4}" ]\n  }\n}'
