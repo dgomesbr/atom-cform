@@ -1,0 +1,4 @@
+'.source.json':
+  'lambda-function':
+    'prefix': 'lambda-function'
+    'body': '"${1:-}": {\n            "Type": "AWS::Lambda::Function",\n            "Properties": {\n                "Code": {\n                  "S3Bucket" : "${2:-}",\n                  "S3Key" : "${3:-}"\n                },\n                "Handler": "index.handler",\n                "Runtime" : "nodejs6.10",\n                "Role": {\n                    "Fn::GetAtt": [\n                        "${4:-}",\n                        "Arn"\n                    ]\n                }\n            },\n            "DependsOn": [\n                "${5:_}"\n            ]\n        },'

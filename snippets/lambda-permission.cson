@@ -1,0 +1,4 @@
+'.source.json':
+  'lambda-permission':
+    'prefix': 'lambda-permission'
+    'body': '"${1:_}": {\n        "Type" : "AWS::Lambda::Permission",\n        "Properties" : {\n          "Action" : "${2:_}",\n          "EventSourceToken" : "${3:_}",\n          "FunctionName" : "${4:_}",\n          "Principal" : "${5:_}",\n          "SourceAccount" : "${6:_}",\n          "SourceArn" : "${7:_}"\n        }\n      }\n'

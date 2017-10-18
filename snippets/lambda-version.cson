@@ -1,0 +1,4 @@
+'.source.json':
+  'lambda-version':
+    'prefix': 'lambda-version'
+    'body': '"${1:_}": {\n      "Type" : "AWS::Lambda::Version",\n      "Properties" : {\n        "CodeSha256" : "${2:_}",\n        "Description" : "${3:_}",\n        "FunctionName" : "${4:_}"\n      }\n    }\n'
