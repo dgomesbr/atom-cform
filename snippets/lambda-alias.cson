@@ -1,0 +1,4 @@
+'.source.json':
+  'lambda-alias':
+    'prefix': 'lambda-alias'
+    'body':  '"${1:_}": {\n      "Type" : "AWS::Lambda::Alias",\n      "Properties" : {\n        "Description" : "${2:_}",\n        "FunctionName" : "${3:_}",\n        "FunctionVersion" : "${4:_}",\n        "Name" : "${5:_}"\n      }\n    }\n'

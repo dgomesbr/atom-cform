@@ -1,0 +1,4 @@
+'.source.json':
+  'lambda-eventsourcemapping':
+    'prefix': 'lambda-eventsourcemapping'
+    'body': '"${1:_}":\n      {\n        "Type" : "AWS::Lambda::EventSourceMapping",\n        "Properties" : {\n          "BatchSize" : ${2:_},\n          "Enabled" : true,\n          "EventSourceArn" : "${3:_}",\n          "FunctionName" : "${4:_}",\n          "StartingPosition" : "${5:_}"\n        }\n      }\n'
