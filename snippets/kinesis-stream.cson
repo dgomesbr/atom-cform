@@ -1,4 +1,4 @@
 '.source.json':
   'kinesis-stream':
     'prefix': 'kinesis-stream'
-    'body': '"${1:kinesisStream}": {\n   "Type": "AWS::Kinesis::Stream",\n   "Properties": {\n      "ShardCount": "${2}"\n   }\n}'
+    'body': '"${1:kinesisStream}": {\n   "Type": "AWS::Kinesis::Stream",\n   "Properties": {\n      "Name": "${2}",\n      "RetentionPeriodHours": "${3}",\n      "ShardCount": "${4}",\n      "Tags": "[${5}]"\n   }\n}'
