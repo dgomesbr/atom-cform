@@ -1,0 +1,4 @@
+'.source.json':
+  'codebuild':
+    'prefix': 'codebuild'
+    'body': '"${1:codeBuild}": {\n  "Type": "AWS::CodeBuild::Project",\n  "Properties" : {\n    "Artifacts" : "${2}",\n    "Environment" : "${3}",\n    "Name" : "${4}",\n    "ServiceRole" : "${5}",\n    "Source" : "${6}",\n  }\n}'
